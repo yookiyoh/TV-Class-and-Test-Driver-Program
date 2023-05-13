@@ -66,6 +66,8 @@ class TV:
 
 
 # define TestTV class
+class TestTV
+
 # have TestTV constructor/s
 # enable methods for TestTV class
 # create instance of TestTV
