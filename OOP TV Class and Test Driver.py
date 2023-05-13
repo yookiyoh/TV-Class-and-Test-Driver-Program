@@ -6,6 +6,8 @@
 # Pseudocode
 
 # create a class for TV
+class TV:
+
 # enable TV class constructor/s
 # execute TV class methods
 # define TestTV class
