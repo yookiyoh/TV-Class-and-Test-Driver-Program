@@ -170,4 +170,7 @@ def menu(self):
             print("Exiting program...")
             break
 
+        else:
+            print("Invalid input. Please try again.")
+
 # create instance of TestTV
