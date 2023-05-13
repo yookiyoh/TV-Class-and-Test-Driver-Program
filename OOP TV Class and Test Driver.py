@@ -26,6 +26,9 @@ class TV:
     def turnoff(self):
         self.off = True
     
+    # method that returns the channel
+    def getChannel(self):
+        return self.channel
 
 
 # define TestTV class
