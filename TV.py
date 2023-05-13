@@ -4,7 +4,6 @@
 # OOP TV Class
 
 
-
 # Define a TV class with its properties and methods
 class TV:
     # Enable TV class constructor/s
