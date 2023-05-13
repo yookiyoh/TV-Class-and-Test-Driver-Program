@@ -101,5 +101,6 @@ def menu(self):
         print("8. Volume down")
         print("9. Display TV info")
         print("0. Exit")
-
+        # have the user enter a choice from the menu
+        choice = input("Enter your choice: ")
 # create instance of TestTV
