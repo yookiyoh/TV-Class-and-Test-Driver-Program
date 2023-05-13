@@ -29,6 +29,11 @@ class TV:
     # method that returns the channel
     def getChannel(self):
         return self.channel
+    
+    # method that sets the channel
+    def setChannel(self, channel):
+        if self.on and 1 <= channel <= 120:
+            self.channel = channel
 
 
 # define TestTV class
