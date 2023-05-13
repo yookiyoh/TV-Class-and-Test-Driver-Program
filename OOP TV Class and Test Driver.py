@@ -196,3 +196,4 @@ if __name__ == '__main__':
 # mass remodifications done
 # re-editing of code done
 # trial testing of remodified program
+# trial testing was successful, program is functional with no errors found
