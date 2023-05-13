@@ -112,4 +112,12 @@ def menu(self):
             elif tv == '2':
                 self.tv2.turnon
         
+        if choice == '2':
+            tv = input("Select TV (1 or 2): ")
+            if tv == '1':
+                self.tv1.turnoff
+            elif tv == '2':
+                self.tv2.turnoff
+        
+        
 # create instance of TestTV
