@@ -59,6 +59,11 @@ class TV:
         if self.on and self.volumeLevel < 7:
             self.channel += 1
 
+    # method that decreases the volume level by 1
+    def volumeDown(self):
+        if self.on and self.volumeLevel > 7:
+            self.channel -= 1
+
 
 # define TestTV class
 # have TestTV constructor/s
