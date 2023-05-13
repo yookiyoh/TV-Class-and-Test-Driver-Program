@@ -127,5 +127,12 @@ def menu(self):
             elif tv == '2':
                 self.tv2.setChannel
         
+        if choice == '4':
+            tv = input("Select TV (1 or 2): ")
+            volume = int(input("Enter new volume level (1-7): "))
+            if tv == '1':
+                self.tv1.setVolume
+            elif tv == '2':
+                self.tv2.setVolume
         
 # create instance of TestTV
