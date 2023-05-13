@@ -82,4 +82,24 @@ class TestTV:
         self.tv2.turnon
 
 # enable methods for TestTV class
+
+def display(self):
+    print ("tv1's channel is", self.tv1.setChannel, "and volume level is", self.tv1.setVolume)
+    print ("tv2's channel is", self.tv2.setChannel, "and volume level is", self.tv2.setVolume)
+
+def menu(self):
+    while True:   # use while True looping
+        # print menu options
+        print("Select an option here:")
+        print("1. Turn on TV")
+        print("2. Turn off TV")
+        print("3. Set channel")
+        print("4. Set volume level")
+        print("5. Channel up")
+        print("6. Channel down")
+        print("7. Volume up")
+        print("8. Volume down")
+        print("9. Display TV info")
+        print("0. Exit")
+
 # create instance of TestTV
