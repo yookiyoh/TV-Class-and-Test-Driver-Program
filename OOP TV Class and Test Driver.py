@@ -174,3 +174,6 @@ def menu(self):
             print("Invalid input. Please try again.")
 
 # create instance of TestTV
+if _name_ == '_main_':
+    test = TestTV()
+    test.menu()
