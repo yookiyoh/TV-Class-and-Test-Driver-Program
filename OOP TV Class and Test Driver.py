@@ -204,24 +204,3 @@ class TestTV:
 if __name__ == '__main__':
     test = TestTV()
     test.menu()
-
-# initial trial testing
-# trial error, "_name_" undefined
-# edited name error
-# another trial failed output
-# fixed major indentation errors
-# retrial 
-# blank output, program failed
-# re-editing, insertion of parentheses
-# retrial
-# retrial failed
-# mass re-editing of code 
-# retrial commenced, program is working
-# program is working, errors have been found in expected output results
-# changed some if statements into elif statements
-# mass remodifications done
-# re-editing of code done
-# trial testing of remodified program
-# trial testing was successful, program is functional with no errors found
-# rewriting comments
-# stylization instigated
