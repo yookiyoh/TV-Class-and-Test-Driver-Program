@@ -162,5 +162,10 @@ def menu(self):
                 self.tv1.volumeDown
             elif tv == '2':
                 self.tv2.volumeDown
+        
+        if choice == '9':
+            self.display
+        
+        
 
 # create instance of TestTV
