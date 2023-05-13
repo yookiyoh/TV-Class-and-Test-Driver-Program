@@ -4,10 +4,6 @@
 # OOP TV Class and Test Driver Program
 
 
-# Import libraries
-import time
-from colorama import Fore, Back, Style
-from tqdm import tqdm
 
 # Define a TV class with its properties and methods
 class TV:
