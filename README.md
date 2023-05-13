@@ -1,5 +1,5 @@
 # TV-Class-and-Test-Driver-Program
-This is a programming assignment that necessitates the development of a Python application which defines two distinct parts: a TV class and a TestTV driver program.
+This programming task entails creating a Python application that comprises of two crucial components: a TV class and a TestTV driver program.
 
 Program Description
 --
