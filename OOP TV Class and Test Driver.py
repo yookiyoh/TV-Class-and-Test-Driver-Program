@@ -174,9 +174,10 @@ def menu(self):
             print("Invalid input. Please try again.")
 
 # create instance of TestTV
-if _name_ == '_main_':
+if __name__ == '_main_':
     test = TestTV()
     test.menu()
 
 # initial trial testing
 # trial error, "_name_" undefined
+# edited name error
