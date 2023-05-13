@@ -49,6 +49,11 @@ class TV:
         if self.on and self.channel < 120:
             self.channel += 1
 
+    # method that decreases the channel number by 1
+    def channelDown(self):
+        if self.on and self.channel > 120:
+            self.channel -= 1
+
 
 # define TestTV class
 # have TestTV constructor/s
