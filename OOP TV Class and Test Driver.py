@@ -24,7 +24,7 @@ class TV:
 
     # method that turns off the TV
     def turnoff(self):
-        self.off = True
+        self.on = False
     
     # method that returns the channel
     def getChannel(self):
@@ -122,17 +122,17 @@ class TestTV:
                 tv = input("Select TV (1 or 2): ")
                 channel = int(input("Enter new channel (1-120): "))
                 if tv == '1':
-                    self.tv1.setChannel()
+                    self.tv1.setChannel(channel)
                 elif tv == '2':
-                    self.tv2.setChannel()
+                    self.tv2.setChannel(channel)
             
             elif choice == '4':
                 tv = input("Select TV (1 or 2): ")
                 volume = int(input("Enter new volume level (1-7): "))
                 if tv == '1':
-                    self.tv1.setVolume()
+                    self.tv1.setVolume(volume)
                 elif tv == '2':
-                    self.tv2.setVolume()
+                    self.tv2.setVolume(volume)
                     
             elif choice == '5':
                 tv = input("Select TV (1 or 2): ")
@@ -153,7 +153,7 @@ class TestTV:
                 if tv == '1':
                     self.tv1.volumeUp()
                 elif tv == '2':
-                    self.tv2.volumpeUp()
+                    self.tv2.volumeUp()
             
             elif choice == '8':
                 tv = input("Select TV (1 or 2): ")
@@ -171,6 +171,8 @@ class TestTV:
             
             else:
                 print("Invalid input. Please try again.")
+
+
 
 # create instance of TestTV
 if __name__ == '__main__':
@@ -191,3 +193,4 @@ if __name__ == '__main__':
 # retrial commenced, program is working
 # program is working, errors have been found in expected output results
 # changed some if statements into elif statements
+# mass remodifications done
