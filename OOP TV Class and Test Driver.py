@@ -179,3 +179,4 @@ if _name_ == '_main_':
     test.menu()
 
 # initial trial testing
+# trial error, "_name_" undefined
