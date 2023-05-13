@@ -3,77 +3,75 @@
 # Object-Oriented Programming | Assignment 6
 # OOP TV Class and Test Driver Program
 
-# Pseudocode
 
-# create a class for TV
+# Define a TV class with its properties and methods
 class TV:
-
-    # enable TV class constructor/s
-
-    # constructor that initializes the TV object
+    # Enable TV class constructor/s
+    # Constructor that initializes the TV object
     def __init__ (self):
+        # Default values for channel, volume level, and on/off status
         self.channel = 1
         self.volumeLevel = 1
         self.on = False
     
-    # execute TV class methods
+    # Execute TV class methods
     
-    # method that turns on the TV
+    # Method that turns on the TV
     def turnon(self):
         self.on = True
 
-    # method that turns off the TV
+    # Method that turns off the TV
     def turnoff(self):
         self.on = False
     
-    # method that returns the channel
+    # Method that returns the current channel
     def getChannel(self):
         return self.channel
     
-    # method that sets the channel
+    # Method that sets the channel to a new value if the TV is on and the channel value is valid
     def setChannel(self, channel):
         if self.on and 1 <= channel <= 120:
             self.channel = channel
     
-    # method that returns the volume level
+    # Method that returns the current volume level
     def getVolume(self):
         return self.volumeLevel
     
-    # method that sets the volume level
+    # Method that sets the volume level to a new value if the TV is on and the volume level value is valid
     def setVolume(self, volumeLevel):
         if self.on and 1 <= volumeLevel <= 7:
             self.volumeLevel = volumeLevel
     
-    # method that increases the channel number by 1
+    # Method that increases the channel number by 1 if the TV is on and the channel is not at its maximum value
     def channelUp(self):
         if self.on and self.channel < 120:
             self.channel += 1
 
-    # method that decreases the channel number by 1
+    # Method that decreases the channel number by 1 if the TV is on and the channel is not at its minimum value
     def channelDown(self):
         if self.on and self.channel > 1:
             self.channel -= 1
     
-    # method that increases the volume level by 1
+    # Method that increases the volume level by 1 if the TV is on and the volume level is not at its maximum value
     def volumeUp(self):
         if self.on and self.volumeLevel < 7:
             self.volumeLevel += 1
 
-    # method that decreases the volume level by 1
+    # Method that decreases the volume level by 1 if the TV is on and the volume level is not at its minimum value
     def volumeDown(self):
         if self.on and self.volumeLevel > 1:
             self.volumeLevel -= 1
 
 
-# define TestTV class
+# Define a TestTV class
 class TestTV:
-    
-    # have TestTV constructor/s
+    # Have TestTV constructor/s
+    # Constructor that initializes two TV objects with their properties and methods
     def __init__ (self):
-        # create two TV objects
+        # Create two TV objects
         self.tv1 = TV()
         self.tv2 = TV()
-        # set the channel, volume level, and turn on both TVs
+        # Set the channel, volume level, and turn on both TVs
         self.tv1.setChannel(30)
         self.tv1.setVolume(3)
         self.tv1.turnon()
@@ -81,14 +79,16 @@ class TestTV:
         self.tv2.setVolume(2)
         self.tv2.turnon()
         
-    # enable methods for TestTV class
+    # Enable methods for TestTV class
+    # Method that displays the current channel and volume level for both TVs
     def display(self):
         print ("tv1's channel is", self.tv1.getChannel(), "and volume level is", self.tv1.getVolume())
         print ("tv2's channel is", self.tv2.getChannel(), "and volume level is", self.tv2.getVolume())
         
+    # Method that displays a menu of options for the user to interact with both TVs
     def menu(self):
-        while True:   # use while True looping
-            # print menu options
+        while True:   # Use while True looping
+            # Print the menu options
             print("Select an option here:")
             print("1. Turn on TV")
             print("2. Turn off TV")
@@ -100,17 +100,20 @@ class TestTV:
             print("8. Volume down")
             print("9. Display TV info")
             print("0. Exit")
-            # have the user enter a choice from the menu
+            # Get the user's input for the chosen option
             choice = input("Enter your choice: ")
-            
-            # have the conditionals
+            # Have the conditionals
+            # Loop through the user's selected TV options
+            # Turn on TV if user selects option 1
             if choice == '1':
+                # Prompt user to select a TV and turn it on if valid option is chosen
                 tv = input("Select TV (1 or 2): ")
                 if tv == '1':
                     self.tv1.turnon()
                 elif tv == '2':
                     self.tv2.turnon()
             
+            # Turn off TV if user selects option 2
             elif choice == '2':
                 tv = input("Select TV (1 or 2): ")
                 if tv == '1':
@@ -118,6 +121,7 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.turnoff()
                     
+            # Change channel of selected TV if user selects option 3
             elif choice == '3':
                 tv = input("Select TV (1 or 2): ")
                 channel = int(input("Enter new channel (1-120): "))
@@ -126,6 +130,7 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.setChannel(channel)
             
+            # Adjust volume of selected TV if user selects option 4
             elif choice == '4':
                 tv = input("Select TV (1 or 2): ")
                 volume = int(input("Enter new volume level (1-7): "))
@@ -134,6 +139,7 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.setVolume(volume)
                     
+            # Increase channel of selected TV if user selects option 5
             elif choice == '5':
                 tv = input("Select TV (1 or 2): ")
                 if tv == '1':
@@ -141,6 +147,7 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.channelUp()
                     
+            # Decrease channel of selected TV if user selects option 6
             elif choice == '6':
                 tv = input("Select TV (1 or 2): ")
                 if tv == '1':
@@ -148,6 +155,7 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.channelDown()
                     
+            # Increase volume of selected TV if user selects option 7
             elif choice == '7':
                 tv = input("Select TV (1 or 2): ")
                 if tv == '1':
@@ -155,6 +163,7 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.volumeUp()
             
+            # Decrease volume of selected TV if user selects option 8
             elif choice == '8':
                 tv = input("Select TV (1 or 2): ")
                 if tv == '1':
@@ -162,19 +171,22 @@ class TestTV:
                 elif tv == '2':
                     self.tv2.volumeDown()
                     
+            # Display current state of all TVs if user selects option 9
             elif choice == '9':
                 self.display()
                 
+            # Exit the program is user selects option 0
             elif choice == '0':
                 print("Exiting program...")
                 break
             
+            # Prompt user to select a valid option if an invalid option is selected and or inputted
             else:
                 print("Invalid input. Please try again.")
 
 
 
-# create instance of TestTV
+# Create an instance of TestTV and call the menu method if the file is being run as the main program
 if __name__ == '__main__':
     test = TestTV()
     test.menu()
@@ -197,3 +209,4 @@ if __name__ == '__main__':
 # re-editing of code done
 # trial testing of remodified program
 # trial testing was successful, program is functional with no errors found
+# rewriting comments
