@@ -189,3 +189,4 @@ if __name__ == '__main__':
 # retrial failed
 # mass re-editing of code 
 # retrial commenced, program is working
+# program is working, errors have been found in expected output results
