@@ -166,6 +166,8 @@ def menu(self):
         if choice == '9':
             self.display
         
-        
+        if choice == '10':
+            print("Exiting program...")
+            break
 
 # create instance of TestTV
