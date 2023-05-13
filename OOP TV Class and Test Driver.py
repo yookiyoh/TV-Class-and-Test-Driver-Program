@@ -66,8 +66,13 @@ class TV:
 
 
 # define TestTV class
-class TestTV
+class TestTV:
+    
+    # have TestTV constructor/s
+    def __init__ (self):
+        # create two TV objects
+        self.tv1
+        self.tv2
 
-# have TestTV constructor/s
 # enable methods for TestTV class
 # create instance of TestTV
