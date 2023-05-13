@@ -3,6 +3,10 @@
 # Object-Oriented Programming | Assignment 6
 # OOP TV Class and Test Driver Program
 
+# Import libraries
+import time
+from colorama import Fore, Back, Style
+from tqdm import tqdm
 
 # Define a TV class with its properties and methods
 class TV:
@@ -173,12 +177,22 @@ class TestTV:
                     
             # Display current state of all TVs if user selects option 9
             elif choice == '9':
+                print("\nLoading info...\n")
+                for i in tqdm(range(100)):
+                    time.sleep(0.01)
+
+                time.sleep(2)
+                print("\n[TV Info Loaded Successfully!]\n")
                 self.display()
                 
             # Exit the program is user selects option 0
             elif choice == '0':
-                print("Exiting program...")
-                break
+                print("\nThank you for using this program!")
+                print("Exiting program in...")
+                for i in range(3, 0, -1):
+                    print(f"{Fore.CYAN}{Back.WHITE}{Style.BRIGHT}{i}{Style.RESET_ALL}")
+                    time.sleep(0.8)
+                exit()
             
             # Prompt user to select a valid option if an invalid option is selected and or inputted
             else:
@@ -210,3 +224,4 @@ if __name__ == '__main__':
 # trial testing of remodified program
 # trial testing was successful, program is functional with no errors found
 # rewriting comments
+# stylization instigated
