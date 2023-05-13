@@ -1,7 +1,7 @@
 # Codilan, Ralph Lorenz I.
 # BSCpE 1-5
 # Object-Oriented Programming | Assignment 6
-# OOP TV Class
+# OOP TV Class File
 
 
 # Define a TV class with its properties and methods
