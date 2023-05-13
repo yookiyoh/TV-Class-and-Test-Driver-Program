@@ -73,6 +73,13 @@ class TestTV:
         # create two TV objects
         self.tv1
         self.tv2
+        # set the channel, volume level, and turn on both TVs
+        self.tv1.setChannel
+        self.tv1.setVolume
+        self.tv1.turnon
+        self.tv2.setChannel
+        self.tv2.setVolume
+        self.tv2.turnon
 
 # enable methods for TestTV class
 # create instance of TestTV
