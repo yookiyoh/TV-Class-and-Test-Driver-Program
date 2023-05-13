@@ -57,12 +57,12 @@ class TV:
     # method that increases the volume level by 1
     def volumeUp(self):
         if self.on and self.volumeLevel < 7:
-            self.channel += 1
+            self.volumeLevel += 1
 
     # method that decreases the volume level by 1
     def volumeDown(self):
         if self.on and self.volumeLevel > 1:
-            self.channel -= 1
+            self.volumeLevel -= 1
 
 
 # define TestTV class
@@ -165,7 +165,7 @@ class TestTV:
             elif choice == '9':
                 self.display()
                 
-            elif choice == '10':
+            elif choice == '0':
                 print("Exiting program...")
                 break
             
@@ -194,3 +194,4 @@ if __name__ == '__main__':
 # program is working, errors have been found in expected output results
 # changed some if statements into elif statements
 # mass remodifications done
+# re-editing of code done
