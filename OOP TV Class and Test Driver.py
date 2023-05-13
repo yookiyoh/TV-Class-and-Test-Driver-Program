@@ -80,98 +80,97 @@ class TestTV:
         self.tv2.setChannel
         self.tv2.setVolume
         self.tv2.turnon
-
-# enable methods for TestTV class
-
-def display(self):
-    print ("tv1's channel is", self.tv1.setChannel, "and volume level is", self.tv1.setVolume)
-    print ("tv2's channel is", self.tv2.setChannel, "and volume level is", self.tv2.setVolume)
-
-def menu(self):
-    while True:   # use while True looping
-        # print menu options
-        print("Select an option here:")
-        print("1. Turn on TV")
-        print("2. Turn off TV")
-        print("3. Set channel")
-        print("4. Set volume level")
-        print("5. Channel up")
-        print("6. Channel down")
-        print("7. Volume up")
-        print("8. Volume down")
-        print("9. Display TV info")
-        print("0. Exit")
-        # have the user enter a choice from the menu
-        choice = input("Enter your choice: ")
-
-        # have the conditionals
-        if choice == '1':
-            tv = input("Select TV (1 or 2): ")
-            if tv == '1':
-                self.tv1.turnon
-            elif tv == '2':
-                self.tv2.turnon
         
-        if choice == '2':
-            tv = input("Select TV (1 or 2): ")
-            if tv == '1':
-                self.tv1.turnoff
-            elif tv == '2':
-                self.tv2.turnoff
+    # enable methods for TestTV class
+    def display(self):
+        print ("tv1's channel is", self.tv1.setChannel, "and volume level is", self.tv1.setVolume)
+        print ("tv2's channel is", self.tv2.setChannel, "and volume level is", self.tv2.setVolume)
         
-        if choice == '3':
-            tv = input("Select TV (1 or 2): ")
-            channel = int(input("Enter new channel (1-120): "))
-            if tv == '1':
-                self.tv1.setChannel
-            elif tv == '2':
-                self.tv2.setChannel
-        
-        if choice == '4':
-            tv = input("Select TV (1 or 2): ")
-            volume = int(input("Enter new volume level (1-7): "))
-            if tv == '1':
-                self.tv1.setVolume
-            elif tv == '2':
-                self.tv2.setVolume
-        
-        if choice == '5':
-            tv = input("Select TV (1 or 2): ")
-            if tv == '1':
-                self.tv1.channelUp
-            elif tv == '2':
-                self.tv2.channelUp
-        
-        if choice == '6':
-            tv = input("Select TV (1 or 2): ")
-            if tv == '1':
-                self.tv1.channelDown
-            elif tv == '2':
-                self.tv2.channelDown
-        
-        if choice == '7':
-            tv = input("Select TV (1 or 2): ")
-            if tv == '1':
-                self.tv1.volumeUp
-            elif tv == '2':
-                self.tv2.volumpeUp
-        
-        if choice == '8':
-            tv = input("Select TV (1 or 2): ")
-            if tv == '1':
-                self.tv1.volumeDown
-            elif tv == '2':
-                self.tv2.volumeDown
-        
-        if choice == '9':
-            self.display
-        
-        if choice == '10':
-            print("Exiting program...")
-            break
-
-        else:
-            print("Invalid input. Please try again.")
+    def menu(self):
+        while True:   # use while True looping
+            # print menu options
+            print("Select an option here:")
+            print("1. Turn on TV")
+            print("2. Turn off TV")
+            print("3. Set channel")
+            print("4. Set volume level")
+            print("5. Channel up")
+            print("6. Channel down")
+            print("7. Volume up")
+            print("8. Volume down")
+            print("9. Display TV info")
+            print("0. Exit")
+            # have the user enter a choice from the menu
+            choice = input("Enter your choice: ")
+            
+            # have the conditionals
+            if choice == '1':
+                tv = input("Select TV (1 or 2): ")
+                if tv == '1':
+                    self.tv1.turnon
+                elif tv == '2':
+                    self.tv2.turnon
+            
+            if choice == '2':
+                tv = input("Select TV (1 or 2): ")
+                if tv == '1':
+                    self.tv1.turnoff
+                elif tv == '2':
+                    self.tv2.turnoff
+                    
+            if choice == '3':
+                tv = input("Select TV (1 or 2): ")
+                channel = int(input("Enter new channel (1-120): "))
+                if tv == '1':
+                    self.tv1.setChannel
+                elif tv == '2':
+                    self.tv2.setChannel
+            
+            if choice == '4':
+                tv = input("Select TV (1 or 2): ")
+                volume = int(input("Enter new volume level (1-7): "))
+                if tv == '1':
+                    self.tv1.setVolume
+                elif tv == '2':
+                    self.tv2.setVolume
+                    
+            if choice == '5':
+                tv = input("Select TV (1 or 2): ")
+                if tv == '1':
+                    self.tv1.channelUp
+                elif tv == '2':
+                    self.tv2.channelUp
+                    
+            if choice == '6':
+                tv = input("Select TV (1 or 2): ")
+                if tv == '1':
+                    self.tv1.channelDown
+                elif tv == '2':
+                    self.tv2.channelDown
+                    
+            if choice == '7':
+                tv = input("Select TV (1 or 2): ")
+                if tv == '1':
+                    self.tv1.volumeUp
+                elif tv == '2':
+                    self.tv2.volumpeUp
+            
+            if choice == '8':
+                tv = input("Select TV (1 or 2): ")
+                if tv == '1':
+                    self.tv1.volumeDown
+                elif tv == '2':
+                    self.tv2.volumeDown
+                    
+            if choice == '9':
+                self.display
+                
+            if choice == '10':
+                print("Exiting program...")
+                break
+            
+            else:
+                print("Invalid input. Please try again.")
 
 # create instance of TestTV
 if __name__ == '_main_':
@@ -182,3 +181,4 @@ if __name__ == '_main_':
 # trial error, "_name_" undefined
 # edited name error
 # another trial failed output
+# fixed major indentation errors
