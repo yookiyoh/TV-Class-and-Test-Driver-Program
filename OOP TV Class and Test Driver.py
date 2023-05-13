@@ -22,6 +22,9 @@ class TV:
     def turnon(self):
         self.on = True
 
+    # method that turns off the TV
+    def turnoff(self):
+        self.off = True
     
 
 
