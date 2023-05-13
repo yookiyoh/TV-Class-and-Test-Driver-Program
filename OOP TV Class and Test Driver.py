@@ -53,6 +53,11 @@ class TV:
     def channelDown(self):
         if self.on and self.channel > 120:
             self.channel -= 1
+    
+    # method that increases the volume level by 1
+    def volumeUp(self):
+        if self.on and self.volumeLevel < 7:
+            self.channel += 1
 
 
 # define TestTV class
