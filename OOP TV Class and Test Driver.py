@@ -7,12 +7,12 @@
 
 # create a class for TV
 class TV:
-
-# enable TV class constructor/s
-def __init__ (self):
-    self.channel = 1
-    self.volumeLevel = 1
-    self.on = False
+    
+    # enable TV class constructor/s
+    def __init__ (self):
+        self.channel = 1
+        self.volumeLevel = 1
+        self.on = False
 
 # execute TV class methods
 # define TestTV class
