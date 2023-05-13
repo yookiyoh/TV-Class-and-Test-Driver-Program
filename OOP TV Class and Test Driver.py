@@ -119,5 +119,13 @@ def menu(self):
             elif tv == '2':
                 self.tv2.turnoff
         
+        if choice == '3':
+            tv = input("Select TV (1 or 2): ")
+            channel = int(input("Enter new channel (1-120): "))
+            if tv == '1':
+                self.tv1.setChannel
+            elif tv == '2':
+                self.tv2.setChannel
+        
         
 # create instance of TestTV
