@@ -103,4 +103,13 @@ def menu(self):
         print("0. Exit")
         # have the user enter a choice from the menu
         choice = input("Enter your choice: ")
+
+        # have the conditionals
+        if choice == '1':
+            tv = input("Select TV (1 or 2): ")
+            if tv == '1':
+                self.tv1.turnon
+            elif tv == '2':
+                self.tv2.turnon
+        
 # create instance of TestTV
