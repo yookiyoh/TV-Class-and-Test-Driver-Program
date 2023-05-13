@@ -7,8 +7,10 @@
 
 # create a class for TV
 class TV:
-    
+
     # enable TV class constructor/s
+    
+    # constructor that initializes the TV object
     def __init__ (self):
         self.channel = 1
         self.volumeLevel = 1
