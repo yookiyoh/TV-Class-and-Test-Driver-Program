@@ -40,7 +40,7 @@ class TV:
         return self.volumeLevel
     
     # method that sets the volume level
-    def setvolumeLevel(self, volumeLevel):
+    def setVolume(self, volumeLevel):
         if self.on and 1 <= volumeLevel <= 7:
             self.volumeLevel = volumeLevel
     
@@ -51,7 +51,7 @@ class TV:
 
     # method that decreases the channel number by 1
     def channelDown(self):
-        if self.on and self.channel > 120:
+        if self.on and self.channel > 1:
             self.channel -= 1
     
     # method that increases the volume level by 1
@@ -61,7 +61,7 @@ class TV:
 
     # method that decreases the volume level by 1
     def volumeDown(self):
-        if self.on and self.volumeLevel > 7:
+        if self.on and self.volumeLevel > 1:
             self.channel -= 1
 
 
@@ -71,20 +71,20 @@ class TestTV:
     # have TestTV constructor/s
     def __init__ (self):
         # create two TV objects
-        self.tv1
-        self.tv2
+        self.tv1 = TV()
+        self.tv2 = TV()
         # set the channel, volume level, and turn on both TVs
-        self.tv1.setChannel()
-        self.tv1.setVolume()
+        self.tv1.setChannel(30)
+        self.tv1.setVolume(3)
         self.tv1.turnon()
-        self.tv2.setChannel()
-        self.tv2.setVolume()
+        self.tv2.setChannel(3)
+        self.tv2.setVolume(2)
         self.tv2.turnon()
         
     # enable methods for TestTV class
     def display(self):
-        print ("tv1's channel is", self.tv1.setChannel, "and volume level is", self.tv1.setVolume())
-        print ("tv2's channel is", self.tv2.setChannel, "and volume level is", self.tv2.setVolume())
+        print ("tv1's channel is", self.tv1.getChannel(), "and volume level is", self.tv1.getVolume())
+        print ("tv2's channel is", self.tv2.getChannel(), "and volume level is", self.tv2.getVolume())
         
     def menu(self):
         while True:   # use while True looping
@@ -188,3 +188,4 @@ if __name__ == '__main__':
 # retrial
 # retrial failed
 # mass re-editing of code 
+# retrial commenced, program is working
