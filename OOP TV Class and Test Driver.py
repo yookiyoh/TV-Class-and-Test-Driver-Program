@@ -74,17 +74,17 @@ class TestTV:
         self.tv1
         self.tv2
         # set the channel, volume level, and turn on both TVs
-        self.tv1.setChannel
-        self.tv1.setVolume
-        self.tv1.turnon
-        self.tv2.setChannel
-        self.tv2.setVolume
-        self.tv2.turnon
+        self.tv1.setChannel()
+        self.tv1.setVolume()
+        self.tv1.turnon()
+        self.tv2.setChannel()
+        self.tv2.setVolume()
+        self.tv2.turnon()
         
     # enable methods for TestTV class
     def display(self):
-        print ("tv1's channel is", self.tv1.setChannel, "and volume level is", self.tv1.setVolume)
-        print ("tv2's channel is", self.tv2.setChannel, "and volume level is", self.tv2.setVolume)
+        print ("tv1's channel is", self.tv1.setChannel, "and volume level is", self.tv1.setVolume())
+        print ("tv2's channel is", self.tv2.setChannel, "and volume level is", self.tv2.setVolume())
         
     def menu(self):
         while True:   # use while True looping
@@ -173,7 +173,7 @@ class TestTV:
                 print("Invalid input. Please try again.")
 
 # create instance of TestTV
-if __name__ == '_main_':
+if __name__ == '__main__':
     test = TestTV()
     test.menu()
 
@@ -187,3 +187,4 @@ if __name__ == '_main_':
 # re-editing, insertion of parentheses
 # retrial
 # retrial failed
+# mass re-editing of code 
